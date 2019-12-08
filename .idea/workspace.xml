@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10beb0dd-ac73-425d-8344-91928c49abdb" name="Default Changelist" comment="" />
+    <list default="true" id="10beb0dd-ac73-425d-8344-91928c49abdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/encdec/EncryptDecrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/encdec/Shift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/encdec/Unicode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/ConsoleInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/FileInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protected.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/protected.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/road_to_treasure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/road_to_treasure.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,15 +21,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TL88CzE44plKr7EfH7c5B0UFuv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -35,7 +52,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Encrypted" />
-      <option name="PROGRAM_PARAMETERS" value="java Main -mode dec -in C:\Users\Stanislav\IdeaProjects\Encrypted\src\road_to_treasure.txt -out C:\Users\Stanislav\IdeaProjects\Encrypted\src\protected.txt -key -11" />
+      <option name="PROGRAM_PARAMETERS" value="-mode enc -alg unicode -in C:\Users\Stanislav\IdeaProjects\Encrypted\src\road_to_treasure.txt -out C:\Users\Stanislav\IdeaProjects\Encrypted\src\protected.txt -key 5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="encryptdecrypt.*" />
@@ -64,6 +81,10 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_ANONYMOUS,SHOW_PROPERTIES,SHOW_INTERFACES" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -78,6 +99,7 @@
       <workItem from="1573471211819" duration="8000" />
       <workItem from="1575124661135" duration="12791000" />
       <workItem from="1575227029762" duration="8731000" />
+      <workItem from="1575802268941" duration="8273000" />
     </task>
     <servers />
   </component>
@@ -89,42 +111,50 @@
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="961" y="177" key="#Auto_Import/0.0.1825.1027@0.0.1825.1027" timestamp="1575233251032" />
-    <state x="366" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575235078882">
+    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575810274627">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="366" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1575235078882" />
-    <state width="866" height="305" key="GridCell.Tab.0.bottom" timestamp="1575238514475">
+    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1575810274627" />
+    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1575810002929">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.0.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.0.center" timestamp="1575238514475">
+    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser/0.0.1825.1027@0.0.1825.1027" timestamp="1575810002929" />
+    <state width="1069" height="305" key="GridCell.Tab.0.bottom" timestamp="1575810543199">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.0.center/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.0.left" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.0.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state width="1069" height="305" key="GridCell.Tab.0.center" timestamp="1575810543198">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.0.left/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.0.right" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.0.center/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543198" />
+    <state width="1069" height="305" key="GridCell.Tab.0.left" timestamp="1575810543198">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.0.right/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.1.bottom" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.0.left/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543198" />
+    <state width="1069" height="305" key="GridCell.Tab.0.right" timestamp="1575810543199">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.1.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.1.center" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.0.right/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state width="1069" height="305" key="GridCell.Tab.1.bottom" timestamp="1575810543199">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.1.center/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.1.left" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.1.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state width="1069" height="305" key="GridCell.Tab.1.center" timestamp="1575810543199">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.1.left/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
-    <state width="866" height="305" key="GridCell.Tab.1.right" timestamp="1575238514475">
+    <state width="1069" height="305" key="GridCell.Tab.1.center/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state width="1069" height="305" key="GridCell.Tab.1.left" timestamp="1575810543199">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="866" height="305" key="GridCell.Tab.1.right/0.0.1825.1027@0.0.1825.1027" timestamp="1575238514475" />
+    <state width="1069" height="305" key="GridCell.Tab.1.left/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state width="1069" height="305" key="GridCell.Tab.1.right" timestamp="1575810543199">
+      <screen x="0" y="0" width="1825" height="1027" />
+    </state>
+    <state width="1069" height="305" key="GridCell.Tab.1.right/0.0.1825.1027@0.0.1825.1027" timestamp="1575810543199" />
+    <state x="198" y="261" width="540" height="524" key="StructurePopup" timestamp="1575807772955">
+      <screen x="0" y="0" width="1825" height="1027" />
+    </state>
+    <state x="198" y="261" width="540" height="524" key="StructurePopup/0.0.1825.1027@0.0.1825.1027" timestamp="1575807772955" />
     <state x="625" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1575124669515">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
@@ -137,5 +167,43 @@
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="574" y="235" key="search.everywhere.popup/0.0.1825.1027@0.0.1825.1027" timestamp="1575148859229" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>9</line>
+          <properties class="Main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>16</line>
+          <properties class="Main" method="run">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>24</line>
+          <properties class="Main" method="runWithFile">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>50</line>
+          <properties class="Main" method="runWithData">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
