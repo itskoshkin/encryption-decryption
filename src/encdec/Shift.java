@@ -19,7 +19,7 @@ public class Shift implements EncryptDecrypt {
         for (int i = 0; i < chars.length; i++) {
             for (int j = 0; j < alphabet.length(); j++) {
                 if (chars[i] == alphabet.charAt(j)) {
-                    chars[i] = alphabet.charAt((j - key) % alphabet.length());
+                    chars[i] = alphabet.charAt((j - Math.abs(key)) % alphabet.length());
                     break;
                 }
             }
@@ -32,7 +32,7 @@ public class Shift implements EncryptDecrypt {
         for (int i = 0; i < chars.length; i++) {
             for (int j = 0; j < alphabet.length(); j++) {
                 if (chars[i] == alphabet.charAt(j)) {
-                    chars[i] = alphabet.charAt((j + key) % alphabet.length());
+                    chars[i] = alphabet.charAt((j + Math.abs(key)) % alphabet.length());
                     break;
                 }
             }
