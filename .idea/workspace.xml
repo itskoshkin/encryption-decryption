@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10beb0dd-ac73-425d-8344-91928c49abdb" name="Default Changelist" comment="fill-automatic by IDE">
+    <list default="true" id="10beb0dd-ac73-425d-8344-91928c49abdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Crypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Encrypted/protected.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Encrypted/protected.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Encrypted/road_to_treasure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Encrypted/road_to_treasure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/input/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protected.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/protected.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/road_to_treasure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/road_to_treasure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encdec/EncryptDecrypt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encdec/Shift.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encdec/Unicode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input/ConsoleInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input/FileInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input/Input.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,6 @@
     <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Encrypted" />
-      <option name="PROGRAM_PARAMETERS" value="-mode enc -alg shift -in C:\Users\Stanislav\IdeaProjects\Encrypted\src\road_to_treasure.txt -out C:\Users\Stanislav\IdeaProjects\Encrypted\src\protected.txt -key -5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="encryptdecrypt.*" />
@@ -107,7 +110,9 @@
       <workItem from="1575880072929" duration="613000" />
       <workItem from="1575903252000" duration="730000" />
       <workItem from="1579105524055" duration="1268000" />
-      <workItem from="1579804732476" duration="144000" />
+      <workItem from="1579804732476" duration="424000" />
+      <workItem from="1579894891605" duration="611000" />
+      <workItem from="1579949949027" duration="8845000" />
     </task>
     <task id="LOCAL-00001" summary="fill-automatic by IDE">
       <created>1575810759072</created>
@@ -151,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575810937224</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bugs">
+      <created>1579805106914</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579805106914</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,41 +178,46 @@
     <MESSAGE value="add interaface for Input with two classes for File &amp; CMD" />
     <MESSAGE value="wrote logic for Application" />
     <MESSAGE value="fill-automatic by IDE" />
-    <option name="LAST_COMMIT_MESSAGE" value="fill-automatic by IDE" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="177" key="#Auto_Import" timestamp="1575233251032">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="961" y="177" key="#Auto_Import/0.0.1825.1027@0.0.1825.1027" timestamp="1575233251032" />
-    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579805090372">
+    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579959345348">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579805090372" />
-    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1575810002929">
+    <state x="11" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579959345348" />
+    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1579966263147">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser/0.0.1825.1027@0.0.1825.1027" timestamp="1575810002929" />
-    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2" timestamp="1575810943607">
+    <state x="717" y="222" key="#com.intellij.ide.util.MemberChooser/0.0.1825.1027@0.0.1825.1027" timestamp="1579966263147" />
+    <state x="919" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579961125102">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2/0.0.1825.1027@0.0.1825.1027" timestamp="1575810943607" />
-    <state width="1781" height="277" key="GridCell.Tab.0.bottom" timestamp="1579804962628">
+    <state x="919" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579961125102" />
+    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2" timestamp="1579805105756">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="1781" height="277" key="GridCell.Tab.0.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1579804962628" />
-    <state width="1781" height="277" key="GridCell.Tab.0.center" timestamp="1579804962628">
+    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2/0.0.1825.1027@0.0.1825.1027" timestamp="1579805105756" />
+    <state width="1781" height="277" key="GridCell.Tab.0.bottom" timestamp="1579805155810">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="1781" height="277" key="GridCell.Tab.0.center/0.0.1825.1027@0.0.1825.1027" timestamp="1579804962628" />
-    <state width="1781" height="277" key="GridCell.Tab.0.left" timestamp="1579804962628">
+    <state width="1781" height="277" key="GridCell.Tab.0.bottom/0.0.1825.1027@0.0.1825.1027" timestamp="1579805155810" />
+    <state width="1781" height="277" key="GridCell.Tab.0.center" timestamp="1579805155810">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="1781" height="277" key="GridCell.Tab.0.left/0.0.1825.1027@0.0.1825.1027" timestamp="1579804962628" />
-    <state width="1781" height="277" key="GridCell.Tab.0.right" timestamp="1579804962628">
+    <state width="1781" height="277" key="GridCell.Tab.0.center/0.0.1825.1027@0.0.1825.1027" timestamp="1579805155810" />
+    <state width="1781" height="277" key="GridCell.Tab.0.left" timestamp="1579805155810">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state width="1781" height="277" key="GridCell.Tab.0.right/0.0.1825.1027@0.0.1825.1027" timestamp="1579804962628" />
+    <state width="1781" height="277" key="GridCell.Tab.0.left/0.0.1825.1027@0.0.1825.1027" timestamp="1579805155810" />
+    <state width="1781" height="277" key="GridCell.Tab.0.right" timestamp="1579805155810">
+      <screen x="0" y="0" width="1825" height="1027" />
+    </state>
+    <state width="1781" height="277" key="GridCell.Tab.0.right/0.0.1825.1027@0.0.1825.1027" timestamp="1579805155810" />
     <state width="1070" height="302" key="GridCell.Tab.1.bottom" timestamp="1575820122802">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
@@ -221,17 +238,17 @@
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="198" y="261" width="540" height="524" key="StructurePopup/0.0.1825.1027@0.0.1825.1027" timestamp="1575807772955" />
-    <state x="625" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1579804733464">
+    <state x="625" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1579950020005">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="625" y="340" key="com.intellij.ide.util.TipDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579804733464" />
+    <state x="625" y="340" key="com.intellij.ide.util.TipDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579950020005" />
     <state x="323" y="139" key="new project wizard" timestamp="1575132128920">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="323" y="139" key="new project wizard/0.0.1825.1027@0.0.1825.1027" timestamp="1575132128920" />
-    <state x="574" y="235" key="search.everywhere.popup" timestamp="1575148859229">
+    <state x="574" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1579962234268">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="574" y="235" key="search.everywhere.popup/0.0.1825.1027@0.0.1825.1027" timestamp="1575148859229" />
+    <state x="574" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1825.1027@0.0.1825.1027" timestamp="1579962234268" />
   </component>
 </project>
