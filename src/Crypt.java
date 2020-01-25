@@ -7,27 +7,42 @@ public interface Crypt {
 class Unicode implements Crypt {
     @Override
     public char[] encrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
+        // TODO: 25.01.2020
+        for (char ch : chars) {
+
+        }
         return chars;
     }
 
     @Override
     public char[] decrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
+        // TODO: 25.01.2020
+        for (char ch : chars) {
+
+        }
         return chars;
     }
 }
 
 class Shift implements Crypt {
+
+    final String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
     @Override
     public char[] encrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
+        // TODO: 25.01.2020
+        for (char ch : chars) {
+
+        }
         return chars;
     }
 
     @Override
     public char[] decrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
+        // TODO: 25.01.2020
+        for (char ch : chars) {
+
+        }
         return chars;
     }
 }
