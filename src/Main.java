@@ -12,7 +12,7 @@ public class Main {
     private void run(HashMap<String, String> hashMap) {
         IO io;
 
-        if (hashMap.containsValue("-data"))
+        if (hashMap.containsKey("-data"))
             io = IOStaticFactory.newInstance(hashMap.get("-data"));
         else
             io = IOStaticFactory.newInstance(hashMap.get("-in"), hashMap.get("-out"));
