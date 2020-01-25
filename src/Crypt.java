@@ -7,17 +7,15 @@ public interface Crypt {
 class Unicode implements Crypt {
     @Override
     public char[] encrypt(char[] chars, int key) {
-        // FIXME: 25.01.2020
         for (int i = 0; i < chars.length; i++)
-            chars[i] = (char) (chars[i] + key);
+            chars[i] = (char) ((chars[i] + key) % 65_536);
         return chars;
     }
 
     @Override
     public char[] decrypt(char[] chars, int key) {
-        // FIXME: 25.01.2020
         for (int i = 0; i < chars.length; i++)
-            chars[i] = (char) (chars[i] - key);
+            chars[i] = (char) ((chars[i] + 65_536 - key) % 65_536);
         return chars;
     }
 }
@@ -29,29 +27,51 @@ class Shift implements Crypt {
 
     @Override
     public char[] encrypt(char[] chars, int key) {
-        // FIXME: 25.01.2020
-        /*for (int i = 0; i < chars.length; i++) {
-            for (int j = 0; j < alphabet.length(); j++) {
-                if (chars[i] == alphabet.charAt(j)) {
-                    chars[i] = alphabet.charAt((j + key) % alphabet.length());
-                    break;
+        for (int i = 0; i < chars.length; i++) {
+            if (Character.isLowerCase(chars[i])) {
+                for (int j = 0; j < alphLowCase.length(); j++) {
+                    if (chars[i] == alphLowCase.charAt(j)) {
+                        // FIXME: 25.01.2020
+                        chars[i] = (char) ('a' + (chars[i] + key % alphLowCase.length()) % alphLowCase.length());
+                        break;
+                    }
+                }
+            } else if (Character.isUpperCase(chars[i])) {
+                for (int j = 0; j < alphUppCase.length(); j++) {
+                    if (chars[i] == alphUppCase.charAt(j)) {
+                        // FIXME: 25.01.2020
+                        chars[i] = (char) ('a' + (chars[i] + key % alphUppCase.length()) % alphUppCase.length());
+                        break;
+                    }
                 }
             }
-        }*/
+
+        }
         return chars;
     }
 
     @Override
     public char[] decrypt(char[] chars, int key) {
-        // FIXME: 25.01.2020
-        /*for (int i = 0; i < chars.length; i++) {
-            for (int j = 0; j < alphabet.length(); j++) {
-                if (chars[i] == alphabet.charAt(j)) {
-                    chars[i] = alphabet.charAt((j - key) % alphabet.length());
-                    break;
+        for (int i = 0; i < chars.length; i++) {
+            if (Character.isLowerCase(chars[i])) {
+                for (int j = 0; j < alphLowCase.length(); j++) {
+                    if (chars[i] == alphLowCase.charAt(j)) {
+                        // FIXME: 25.01.2020
+                        chars[i] = (char) ('a' + (chars[i] - key % alphLowCase.length()) % alphLowCase.length());
+                        break;
+                    }
+                }
+            } else if (Character.isUpperCase(chars[i])) {
+                for (int j = 0; j < alphUppCase.length(); j++) {
+                    if (chars[i] == alphUppCase.charAt(j)) {
+                        // FIXME: 25.01.2020
+                        chars[i] = (char) ('a' + (chars[i] - key % alphUppCase.length()) % alphUppCase.length());
+                        break;
+                    }
                 }
             }
-        }*/
+
+        }
         return chars;
     }
 }
