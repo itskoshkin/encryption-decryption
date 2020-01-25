@@ -27,20 +27,21 @@ class Shift implements Crypt {
 
     @Override
     public char[] encrypt(char[] chars, int key) {
+        // TODO: 25.01.2020  
+        int shift = 0;
+        
         for (int i = 0; i < chars.length; i++) {
             if (Character.isLowerCase(chars[i])) {
                 for (int j = 0; j < alphLowCase.length(); j++) {
                     if (chars[i] == alphLowCase.charAt(j)) {
-                        // FIXME: 25.01.2020
-                        chars[i] = (char) ('a' + (chars[i] + key % alphLowCase.length()) % alphLowCase.length());
+                        chars[i] = alphLowCase.charAt((j + shift) % alphLowCase.length());
                         break;
                     }
                 }
             } else if (Character.isUpperCase(chars[i])) {
                 for (int j = 0; j < alphUppCase.length(); j++) {
                     if (chars[i] == alphUppCase.charAt(j)) {
-                        // FIXME: 25.01.2020
-                        chars[i] = (char) ('a' + (chars[i] + key % alphUppCase.length()) % alphUppCase.length());
+                        chars[i] = alphUppCase.charAt((j + shift) % alphUppCase.length());
                         break;
                     }
                 }
@@ -52,20 +53,21 @@ class Shift implements Crypt {
 
     @Override
     public char[] decrypt(char[] chars, int key) {
+        // TODO: 25.01.2020  
+        int shift = 0;
+        
         for (int i = 0; i < chars.length; i++) {
             if (Character.isLowerCase(chars[i])) {
                 for (int j = 0; j < alphLowCase.length(); j++) {
                     if (chars[i] == alphLowCase.charAt(j)) {
-                        // FIXME: 25.01.2020
-                        chars[i] = (char) ('a' + (chars[i] - key % alphLowCase.length()) % alphLowCase.length());
+                        chars[i] = alphLowCase.charAt((j + shift) % alphLowCase.length());
                         break;
                     }
                 }
             } else if (Character.isUpperCase(chars[i])) {
                 for (int j = 0; j < alphUppCase.length(); j++) {
                     if (chars[i] == alphUppCase.charAt(j)) {
-                        // FIXME: 25.01.2020
-                        chars[i] = (char) ('a' + (chars[i] - key % alphUppCase.length()) % alphUppCase.length());
+                        chars[i] = alphUppCase.charAt((j + shift) % alphUppCase.length());
                         break;
                     }
                 }
