@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10beb0dd-ac73-425d-8344-91928c49abdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Crypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encdec/EncryptDecrypt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encdec/Shift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encdec/Unicode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/ConsoleInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/FileInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +105,7 @@
       <workItem from="1579105524055" duration="1268000" />
       <workItem from="1579804732476" duration="424000" />
       <workItem from="1579894891605" duration="611000" />
-      <workItem from="1579949949027" duration="8845000" />
+      <workItem from="1579949949027" duration="10282000" />
     </task>
     <task id="LOCAL-00001" summary="fill-automatic by IDE">
       <created>1575810759072</created>
@@ -163,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579805106914</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="code review &amp; add pattern &amp;&amp; fix bugs">
+      <created>1579967850137</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579967850137</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +179,8 @@
     <MESSAGE value="wrote logic for Application" />
     <MESSAGE value="fill-automatic by IDE" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="code review &amp; add pattern &amp;&amp; fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="code review &amp; add pattern &amp;&amp; fix bugs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="177" key="#Auto_Import" timestamp="1575233251032">
@@ -198,10 +199,10 @@
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
     <state x="919" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1825.1027@0.0.1825.1027" timestamp="1579961125102" />
-    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2" timestamp="1579805105756">
+    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2" timestamp="1579967849154">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
-    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2/0.0.1825.1027@0.0.1825.1027" timestamp="1579805105756" />
+    <state x="255" y="73" width="1091" height="881" key="CommitChangelistDialog2/0.0.1825.1027@0.0.1825.1027" timestamp="1579967849154" />
     <state width="1781" height="277" key="GridCell.Tab.0.bottom" timestamp="1579805155810">
       <screen x="0" y="0" width="1825" height="1027" />
     </state>
