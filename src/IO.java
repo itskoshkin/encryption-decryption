@@ -1,7 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 abstract class IO {
@@ -22,13 +19,9 @@ class FileIO extends IO {
 
     @Override
     public char[] input() {
-        // FIXME: 25.01.2020 TODO Reader
-        try {
-            final Scanner scanner = new Scanner(new File(this.in));
-            String data = scanner.nextLine();
-            scanner.close();
-            return data.toCharArray();
-        } catch (FileNotFoundException e) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(this.in))) {
+            return bufferedReader.readLine().toCharArray();
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return "".toCharArray();
@@ -36,11 +29,8 @@ class FileIO extends IO {
 
     @Override
     public void output(char[] chars) {
-        try {
-            FileWriter fileWriter = new FileWriter(new File(this.out));
-            fileWriter.write(chars);
-            fileWriter.flush();
-            fileWriter.close();
+        try (FileWriter writer = new FileWriter(this.out, false)) {
+            writer.write(chars);
         } catch (IOException e) {
             e.printStackTrace();
         }
