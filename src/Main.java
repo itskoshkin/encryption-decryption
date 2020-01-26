@@ -10,6 +10,7 @@ public class Main {
     }
 
     private void run(HashMap<String, String> hashMap) {
+        // TODO: 26.01.2020 throw new exceptions
         IO io;
 
         if (hashMap.containsKey("-data"))
