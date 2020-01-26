@@ -27,52 +27,40 @@ class Shift implements Crypt {
 
     @Override
     public char[] encrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
-        int shift = 0;
-        
         for (int i = 0; i < chars.length; i++) {
             if (Character.isLowerCase(chars[i])) {
-                for (int j = 0; j < alphLowCase.length(); j++) {
-                    if (chars[i] == alphLowCase.charAt(j)) {
-                        chars[i] = alphLowCase.charAt((j + shift) % alphLowCase.length());
-                        break;
-                    }
-                }
+                chars[i] += key % alphLowCase.length();
+                if (chars[i] > 'z')
+                    chars[i] = (char) (chars[i] % 'z' + 'a' - 1);
+                else if (chars[i] < 'a')
+                    chars[i] = (char) (chars[i] + ('z' - 'a') + 1);
             } else if (Character.isUpperCase(chars[i])) {
-                for (int j = 0; j < alphUppCase.length(); j++) {
-                    if (chars[i] == alphUppCase.charAt(j)) {
-                        chars[i] = alphUppCase.charAt((j + shift) % alphUppCase.length());
-                        break;
-                    }
-                }
+                chars[i] += key % alphUppCase.length();
+                if (chars[i] > 'Z')
+                    chars[i] = (char) (chars[i] % 'Z' + 'A' - 1);
+                else if (chars[i] < 'A')
+                    chars[i] = (char) (chars[i] + ('Z' - 'A') + 1);
             }
-
         }
         return chars;
     }
 
     @Override
     public char[] decrypt(char[] chars, int key) {
-        // TODO: 25.01.2020  
-        int shift = 0;
-        
         for (int i = 0; i < chars.length; i++) {
             if (Character.isLowerCase(chars[i])) {
-                for (int j = 0; j < alphLowCase.length(); j++) {
-                    if (chars[i] == alphLowCase.charAt(j)) {
-                        chars[i] = alphLowCase.charAt((j + shift) % alphLowCase.length());
-                        break;
-                    }
-                }
+                chars[i] -= key % alphLowCase.length();
+                if (chars[i] > 'z')
+                    chars[i] = (char) (chars[i] % 'z' + 'a' - 1);
+                else if (chars[i] < 'a')
+                    chars[i] = (char) (chars[i] + ('z' - 'a') + 1);
             } else if (Character.isUpperCase(chars[i])) {
-                for (int j = 0; j < alphUppCase.length(); j++) {
-                    if (chars[i] == alphUppCase.charAt(j)) {
-                        chars[i] = alphUppCase.charAt((j + shift) % alphUppCase.length());
-                        break;
-                    }
-                }
+                chars[i] -= key % alphUppCase.length();
+                if (chars[i] > 'Z')
+                    chars[i] = (char) (chars[i] % 'Z' + 'A' - 1);
+                else if (chars[i] < 'A')
+                    chars[i] = (char) (chars[i] + ('Z' - 'A') + 1);
             }
-
         }
         return chars;
     }
